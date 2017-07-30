@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.css">
+    <link rel="stylesheet" href="css/main.css">
+
+
+
+</head>
+  <body ng-app="myApp">
+
+    <div ng-controller="firstCtrl">
+
+      <!-- <input class="form-control" ng-model="myName" ng-change="logChanges(myName)">
+
+      <button type="button" name="Button" class="btn btn-danger"
+      ng-click="logChanges(myName)">Get Name</button>
+        <h1>{{myName}}</h1>
+
+        <ul>
+          <li ng-repeat="name in nameArr">{{name}}</li>
+        </ul>
+
+        <ul>
+          <li ng-repeat="name in objArr">{{name.job}}</li>
+        </ul> -->
+ <input class="form-control" ng-model="search" >
+ <button type="button" name="button" class="btn btn-danger" ng-click="logChanges(search)">Find Me</button>
+
+ <ul>
+   <li ng-repeat="article in articles">{{article}}</li>
+ </ul>
+    </div>
+
+
+
+    <script
+  src="https://code.jquery.com/jquery-1.12.4.min.js"
+  integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+  crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js" type="text/javascript"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-route.js" type="text/javascript"></script>
+      <script src="js/main.js"></script>
+  </body>
+</html>
